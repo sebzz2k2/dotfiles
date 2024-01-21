@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script is supposed to run every 6 hours
 REPO_PATH=~/dotfiles
 
 cd $REPO_PATH
