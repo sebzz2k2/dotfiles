@@ -211,7 +211,8 @@ bar {
 
 
 # Dual Monitor setup
-bindsym Ctrl+Shift+D exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --left-of eDP
+bindsym Ctrl+Shift+S exec xrandr --output HDMI-A-0 --mode 1920x1080--rate 60 --left-of eDP
+bindsym Ctrl+Shift+D exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --right-of eDP
 bindsym Ctrl+Shift+F exec xrandr --output HDMI-A-0 --off
 
 # Moving workspaces between screens 
