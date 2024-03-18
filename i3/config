@@ -33,7 +33,7 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+v exec code
 
 #scripts
-bindsym $mod+t exec code /home/sebin/Documents/hspl/trakrboard/
+bindsym $mod+t exec code /home/sebin/Documents/hspl/trakrboard-frontend/
 bindsym $mod+y exec code /home/sebin/Documents/hspl/hapi-v2
 
 #exit
