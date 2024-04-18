@@ -49,6 +49,7 @@ alias h2="cd ~/Documents/hspl/hapi-v2"
 alias tb="cd ~/Documents/hspl/trakrboard-frontend"
 alias lp="cd ~/Documents/log-pose"
 alias bw="bun --watch index.ts"
+alias swb="cd ~/Documents/projects/sWiz/backend"
 
 alias dcu="docker compose up"
 alias dcrm="docker compose rm"
