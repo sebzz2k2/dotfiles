@@ -30,6 +30,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 #alias
 eval $(thefuck --alias)
+alias cat=batcat
 alias vi=nvim
 alias hl="cd ~/Documents/hspl && ls"
 alias script="cd /data/scripts/project_scripts"
