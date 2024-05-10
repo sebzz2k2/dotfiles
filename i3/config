@@ -102,13 +102,13 @@ set $ws10 "10"
 
 
 #default ws for applications
-assign [class="^Firefox"]          $ws1
-assign [class="^Google-chrome"]    $ws1
-assign [class="^Code"]            $ws2
-assign [class="^Alacritty"]       $ws3
-assign [class="^Nautilus"]        $ws4
-assign [class="^Telegram-desktop"] $ws7
-assign [class="^Hoppscotch"]            $ws10
+#assign [class="^Firefox"]          $ws1
+#assign [class="^Google-chrome"]    $ws1
+#assign [class="^Code"]            $ws2
+#assign [class="^Alacritty"]       $ws3
+#assign [class="^Nautilus"]        $ws4
+#assign [class="^Telegram-desktop"] $ws7
+#assign [class="^Hoppscotch"]            $ws10
 
 #assigm ws number
 bindsym $mod+1 workspace number $ws1
@@ -138,19 +138,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 bindsym $mod+Tab workspace back_and_forth
-
-#set default screens
-workspace "1" output eDP
-workspace "2" output HDMI-A-0
-workspace "3" output HDMI-A-0
-workspace "4" output HDMI-A-0
-workspace "5:5" output HDMI-A-0
-workspace "6:6" output HDMI-A-0
-workspace "7" output eDP
-workspace "8:8" output eDP
-workspace "9:9" output eDP
-workspace "10" output eDP
-
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
