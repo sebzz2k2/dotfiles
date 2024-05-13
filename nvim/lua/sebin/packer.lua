@@ -1,3 +1,4 @@
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -37,5 +38,23 @@ return require('packer').startup(function(use)
   branch = 'master',
   run = 'npm ci'
 }
+
+--copilot
   use('github/copilot.vim')
+	
+	--lua line
+	use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
+
+	--delimit mate
+	use 'Raimondi/delimitMate'
+
+	-- wilder
+	use {
+  'gelguy/wilder.nvim',
+	}
+	-- ufo
+	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 end)
