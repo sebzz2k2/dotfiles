@@ -57,4 +57,10 @@ return require('packer').startup(function(use)
 	}
 	-- ufo
 	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+	-- toggleterm
+	 use {
+        'akinsho/toggleterm.nvim',
+				tag = '*'
+    }
 end)
