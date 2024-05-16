@@ -20,6 +20,7 @@ vim.keymap.set("n", "<A-k>", ":m .-2<CR>==")
 vim.keymap.set("i", "<A-j>", ":m .+1<CR>==gi")
 vim.keymap.set("i", "<A-k>", ":m .-2<CR>==gi")
 
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
