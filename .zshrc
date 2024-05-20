@@ -33,7 +33,6 @@ eval $(thefuck --alias)
 alias cat=batcat
 alias vi=nvim
 alias vim=nvim
-alias ssh=mosh
 alias hl="cd ~/Documents/hspl && ls"
 alias script="cd /data/scripts/project_scripts"
 alias hspl="sshpass -f hspluserpass.txt ssh sebin@10.66.66.9"
