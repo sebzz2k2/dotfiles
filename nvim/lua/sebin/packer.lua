@@ -81,4 +81,12 @@ return require('packer').startup(function(use)
 		'lewis6991/gitsigns.nvim',
 	}
 
+	-- lazy git
+	use({
+		"kdheepak/lazygit.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
 end)
