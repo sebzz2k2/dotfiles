@@ -1,4 +1,5 @@
 
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -101,5 +102,14 @@ return require('packer').startup(function(use)
 	-- precognition
 	use {
 		 "tris203/precognition.nvim",
+	}
+
+	-- trouble nvim 
+	use {
+		"folke/trouble.nvim",
+		requires = {
+			"nvim-tree/nvim-web-devicons"
+		}
+
 	}
 end)

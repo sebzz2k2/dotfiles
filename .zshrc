@@ -29,8 +29,8 @@ export PATH="$HOME/.local/bin:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #alias
-eval $(thefuck --alias)
 alias cat=batcat
+alias cd=z
 alias vi=nvim
 alias vim=nvim
 alias hl="cd ~/Documents/hspl && ls"
@@ -84,3 +84,8 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=/home/sebin/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
