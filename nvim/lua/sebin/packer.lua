@@ -89,4 +89,17 @@ return require('packer').startup(function(use)
 		},
 	})
 
+	-- hardtime
+	use {
+		"m4xshen/hardtime.nvim",
+		requires = {
+			"MunifTanjim/nui.nvim", 
+			"nvim-lua/plenary.nvim"
+		}
+	}
+
+	-- precognition
+	use {
+		 "tris203/precognition.nvim",
+	}
 end)

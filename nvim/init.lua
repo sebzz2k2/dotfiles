@@ -2,6 +2,7 @@ require("sebin")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.showmode = false
 
 -- spell checking
 vim.opt.spelllang = "en_us"
