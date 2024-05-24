@@ -66,11 +66,11 @@ keyset("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 
 -- Highlight the symbol and its references on a CursorHold event(cursor is idle)
 vim.api.nvim_create_augroup("CocGroup", {})
-vim.api.nvim_create_autocmd("CursorHold", {
-    group = "CocGroup",
-    command = "silent call CocActionAsync('highlight')",
-    desc = "Highlight symbol under cursor on CursorHold"
-})
+--vim.api.nvim_create_autocmd("CursorHold", {
+--    group = "CocGroup",
+--    command = "silent call CocActionAsync('highlight')",
+--    desc = "Highlight symbol under cursor on CursorHold"
+--})
 
 
 -- Symbol renaming
@@ -80,7 +80,6 @@ keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
 -- Formatting selected code
 keyset("x", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
 keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
-
 
 -- Setup formatexpr specified filetype(s)
 vim.api.nvim_create_autocmd("FileType", {
@@ -185,3 +184,5 @@ keyset("n", "<space>j", ":<C-u>CocNext<cr>", opts)
 keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 -- Resume latest coc list
 keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
+
+

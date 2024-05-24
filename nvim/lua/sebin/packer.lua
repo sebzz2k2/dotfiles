@@ -25,8 +25,11 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
 	-- harpoon
-	use('theprimeagen/harpoon')
-
+use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { "nvim-lua/plenary.nvim","nvim-telescope/telescope.nvim" }
+}
 	--undotree
 	use ('mbbill/undotree')
 
@@ -102,14 +105,5 @@ return require('packer').startup(function(use)
 	-- precognition
 	use {
 		 "tris203/precognition.nvim",
-	}
-
-	-- trouble nvim 
-	use {
-		"folke/trouble.nvim",
-		requires = {
-			"nvim-tree/nvim-web-devicons"
-		}
-
 	}
 end)

@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/sebin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["hardtime.nvim"] = {
+    loaded = true,
+    path = "/home/sebin/.local/share/nvim/site/pack/packer/start/hardtime.nvim",
+    url = "https://github.com/m4xshen/hardtime.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/sebin/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -155,6 +160,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sebin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["precognition.nvim"] = {
+    loaded = true,
+    path = "/home/sebin/.local/share/nvim/site/pack/packer/start/precognition.nvim",
+    url = "https://github.com/tris203/precognition.nvim"
   },
   ["promise-async"] = {
     loaded = true,
