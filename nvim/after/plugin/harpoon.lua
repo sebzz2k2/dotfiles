@@ -19,7 +19,7 @@ harpoon:setup()
 vim.keymap.set("n", "<leader>z", function() harpoon:list():add() end)
 vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
-
+vim.keymap.set("n", "<C-w>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 -- add 10 windows in harpoon 
 for i = 1, 10 do
 			vim.keymap.set("n", string.format("<A-%d>", i), function()
