@@ -30,6 +30,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 #alias
 alias cat=batcat
+alias tks="tmux kill-server"
 alias cd=z
 alias vi=nvim
 alias tmux="tmux -u"
