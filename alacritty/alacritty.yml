@@ -8,6 +8,7 @@
 # References:
 #   https://github.com/alacritty/alacritty
 
+
 window:
   opacity: 0.8
   padding:

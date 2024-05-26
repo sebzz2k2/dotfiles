@@ -32,6 +32,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias cat=batcat
 alias cd=z
 alias vi=nvim
+alias tmux="tmux -u"
 alias vim=nvim
 alias hl="cd ~/Documents/hspl && ls"
 alias script="cd /data/scripts/project_scripts"
@@ -89,3 +90,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 eval "$(zoxide init zsh)"
 eval $(thefuck --alias)
+
+
+
+
+export TERM='xterm-256color'
+export EDITOR='nvim'
+export VISUAL='nvim'
