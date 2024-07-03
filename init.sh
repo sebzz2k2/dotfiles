@@ -42,6 +42,7 @@ ln -s ~/dotfiles/i3 ~/.config
 ln -s ~/dotfiles/i3status ~/.config
 ln -s ~/dotfiles/nvim ~/.config
 ln -s ~/dotfiles/.tmux ~/
+ln -s ~/dotfiles/alacritty ~/.config
 ## nodejs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
