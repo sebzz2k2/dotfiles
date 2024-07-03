@@ -21,13 +21,6 @@ return {
         open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
         sort_case_insensitive = false, -- used when sorting files and directories in the tree
         sort_function = nil , -- use a custom function for sorting files and directories in the tree 
-        -- sort_function = function (a,b)
-        --       if a.type == b.type then
-        --           return a.path > b.path
-        --       else
-        --           return a.type > b.type
-        --       end
-        --   end , -- this sorts files and directories descendantly
         default_component_configs = {
           container = {
             enable_character_fade = true
@@ -72,7 +65,7 @@ return {
               deleted   = "✖",-- this can only be used in the git_status source
               renamed   = "r",-- this can only be used in the git_status source
               -- status type
-              untracked = "",
+              untracked = "?",
               ignored   = "",
               unstaged  = "u",
               staged    = "",
@@ -100,9 +93,6 @@ return {
             enabled = false,
           },
         },
-        -- a list of functions, each representing a global custom command
-        -- that will be available in all sources (if not overridden in `opts[source_name].commands`)
-        -- see `:h neo-tree-custom-commands-global`
         commands = {},
         window = {
           position = "left",
@@ -284,6 +274,7 @@ return {
 
 			end
 		end
+		vim.cmd([[nnoremap \\ :Neotree toggle<cr>]])
 	end,
 
 	vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle dir=./ <CR>"),
