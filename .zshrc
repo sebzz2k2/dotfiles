@@ -35,7 +35,7 @@ alias unsus=fg
 alias tks="tmux kill-server"
 alias vi=nvim
 alias tmux="tmux -u"
-#alias vim=nvim
+alias vim=nvim
 alias hl="cd ~/Documents/hspl && ls"
 alias script="cd /data/scripts/project_scripts"
 alias hspl="sshpass -f hspluserpass.txt ssh sebin@10.66.66.9"
@@ -55,6 +55,8 @@ alias tb="cd ~/Documents/hspl/trakrboard-frontend"
 alias lp="cd ~/Documents/log-pose"
 alias bw="bun --watch index.ts"
 alias swb="cd ~/Documents/projects/sWiz/backend"
+alias wup="sudo wg-quick up wg0"
+alias wdw="sudo wg-quick down wg0" 
 
 alias dcu="docker compose up"
 alias dcrm="docker compose rm"

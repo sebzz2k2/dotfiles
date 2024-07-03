@@ -56,5 +56,8 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
+## wireguard
+sudo apt install wireguard resolvconf -y
+sudo cp ~/Sebin_wg0.conf /etc/wireguard/wg0.conf
 
 echo "install required fonts Eg: Meslo font"
