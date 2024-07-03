@@ -33,10 +33,9 @@ alias cat=batcat
 alias gti=git
 alias unsus=fg
 alias tks="tmux kill-server"
-alias cd=z
 alias vi=nvim
 alias tmux="tmux -u"
-alias vim=nvim
+#alias vim=nvim
 alias hl="cd ~/Documents/hspl && ls"
 alias script="cd /data/scripts/project_scripts"
 alias hspl="sshpass -f hspluserpass.txt ssh sebin@10.66.66.9"
@@ -68,31 +67,10 @@ cpp() {
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# bun completions
-[ -s "/home/sebin/.bun/_bun" ] && source "/home/sebin/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-source $HOME/.cargo/env
-export PATH="$PATH:`pwd`/flutter/bin"
-export PATH=$PATH:/usr/local/go/bin
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-
-export ANDROID_HOME=/home/sebin/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-eval "$(zoxide init zsh)"
 eval $(thefuck --alias)
+eval "$(zoxide init zsh)"
 
 
 
@@ -100,3 +78,10 @@ eval $(thefuck --alias)
 export TERM='xterm-256color'
 export EDITOR='nvim'
 export VISUAL='nvim'
+
+
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
