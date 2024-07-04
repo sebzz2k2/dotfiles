@@ -4,7 +4,7 @@ sudo apt update -y
 
 sudo apt upgrade -y
 
-sudo apt install git tmux vim neovim curl wget net-tools bat htop gcc g++ pipx -y
+sudo apt install git tmux vim neovim curl wget net-tools bat htop gcc g++ pipx wireguard resolvconf maim xclip zsh -y
 
 ## install i3
 /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2024.03.04_all.deb keyring.deb SHA256:f9bb4340b5ce0ded29b7e014ee9ce788006e9bbfe31e96c09b2118ab91fca734
@@ -27,7 +27,6 @@ sudo apt install alacritty
 pipx install thfuck
 
 ## zsh
-sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## clone dotfiles
@@ -58,7 +57,6 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 ## wireguard
-sudo apt install wireguard resolvconf -y
 sudo cp ~/Sebin_wg0.conf /etc/wireguard/wg0.conf
 
 echo "install required fonts Eg: Meslo font"
