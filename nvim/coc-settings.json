@@ -5,6 +5,7 @@
     "markdown",
     "coc-go",
     "javascript",
+		"coc-tsserver",
     "javascriptreact",
     "typescript",
     "typescriptreact",

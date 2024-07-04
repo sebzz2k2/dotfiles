@@ -3,8 +3,8 @@
 
 case "$1" in
     lock)
-        i3lock -i /home/sebin/Pictures/wallpaper/wallpaperflare.com_wallpaper.jpg
-        ;;
+       /home/sebin/.config/i3/scripts/lock/lock -p -n 
+			;;
     logout)
         i3-msg exit
         ;;
