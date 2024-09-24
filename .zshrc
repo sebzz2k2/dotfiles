@@ -30,6 +30,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 #alias
 alias gti=git
+alias cdir="ls -l . | grep -c ^d"
 alias unsus=fg
 alias tks="tmux kill-server"
 alias vi=nvim
