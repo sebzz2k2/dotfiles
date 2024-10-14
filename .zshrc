@@ -58,6 +58,7 @@ alias bw="bun --watch index.ts"
 alias swb="cd ~/Documents/projects/sWiz/backend"
 alias wup="sudo wg-quick up wg0"
 alias wdw="sudo wg-quick down wg0" 
+alias ad="ssh -i ~/.ssh/adbrew_do  root@165.22.212.230"
 
 alias dcu="docker compose up"
 alias dcrm="docker compose rm"
