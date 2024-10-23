@@ -24,7 +24,6 @@ sudo apt install alacritty
 
 
 ## install thefuck
-pipx install thfuck
 
 ## zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -34,8 +33,8 @@ git clone https://github.com/sebzz2k2/dotfiles
 
 ## install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-ln -s ~/dotfiles/.tmux.conf ~/
+rm ~/.zshrc
+ln -s ~/dotfiles/tmux/.tmux.conf ~/
 ln -s ~/dotfiles/.zshrc ~/
 ln -s ~/dotfiles/i3 ~/.config
 ln -s ~/dotfiles/i3status ~/.config

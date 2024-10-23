@@ -30,6 +30,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 #alias
 alias gti=git
+alias cdir="ls -l . | grep -c ^d"
 alias unsus=fg
 alias tks="tmux kill-server"
 alias vi=nvim
@@ -44,6 +45,7 @@ alias fk="fuck"
 alias lp="cd ~/Documents/log-pose"
 alias bw="bun --watch index.ts"
 alias swb="cd ~/Documents/projects/sWiz/backend"
+alias ad="ssh -i ~/.ssh/adbrew_do  root@165.22.212.230"
 
 alias dcu="docker compose up"
 alias dcrm="docker compose rm"
